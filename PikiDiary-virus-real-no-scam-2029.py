@@ -75,7 +75,7 @@ def delete_greg(signum, frame):
 def main():
     signal.signal(signal.SIGINT, delete_greg)
     signal.signal(signal.SIGTERM, delete_greg)
-    print("say exit to exit program, say start to start, press \"ctrl + c\" to stop in process g")
+    print("say exit to exit program, say start to start, press \"ctrl + c\" to stop in process g (IF YOU DO THIS, THE INFECTED PHOTOS WILL BE DELETED. JUST CLOSE OR KILL THE TERMINAL.)")
     ok = input().lower()
 
     while True:
